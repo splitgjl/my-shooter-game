@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+canvas {
+    border: 1px solid black;
+    background-color: #000020; /* 深蓝色背景，模拟太空 */
+    display: block; /* 避免 canvas 下方有空隙 */
+    margin-bottom: 10px;
+}
+
+#scoreBoard {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#gameOverScreen h2 {
+    margin-top: 0;
+    color: red;
+}
+
+#gameOverScreen button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#gameOverScreen button:hover {
+    background-color: #45a049;
+}
